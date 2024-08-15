@@ -7,11 +7,12 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React from 'react'
 import Footer from './Footer'
+import PlaidLink from './PlaidLink'
 
 const Sidebar = ({user}: SiderbarProps) => {
     const pathname = usePathname();
   return (
-    <section className='sidebar'>
+    <section className='sidebar z-3'>
         <nav className='flex flex-col gap-4'>
             <Link className='flex mb-12 cursor-pointer items-center gap-2' href='/'>
              <Image src="/icons/logo.svg" width={34} height={34} alt='logo' className='size-[24px] max-xl:size-14'/>
@@ -29,7 +30,7 @@ const Sidebar = ({user}: SiderbarProps) => {
                 )
             })}
 
-            USER
+            <PlaidLink user={user}/>
         </nav>
 
         <Footer user={user} type='desktop'/>
