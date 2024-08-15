@@ -6,7 +6,7 @@ import { getLoggedInUser } from '@/lib/actions/user.actions';
 const MyBanks = async () => {
   const loggedIn = await getLoggedInUser();
   const accounts = await getAccounts({ 
-    userId: loggedIn.$id 
+    userId: loggedIn.$id
   })
 
   return (
