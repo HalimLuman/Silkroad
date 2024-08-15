@@ -3,6 +3,8 @@
 
 Built with Next.js, Silkroad is a financial SaaS platform that connects to multiple bank accounts, displays transactions in real-time, allows users to transfer money to other platform users, and manages their finances altogether.<span className="text-blue-500">The Project reference is taken from JSMastery youtube channel</span> 
 
+Open [https://silkroad-mauve.vercel.app/sign-in](https://silkroad-mauve.vercel.app/sign-in) to see the final result of the project.
+
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
 - Next.js
